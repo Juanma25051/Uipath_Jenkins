@@ -8,8 +8,8 @@ pipeline {
 	        MINOR = '0'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
-	        UIPATH_ORCH_LOGICAL_NAME = "anupaminc"
-	        UIPATH_ORCH_TENANT_NAME = "Descriptify"
+	        UIPATH_ORCH_LOGICAL_NAME = "juanchoucair"
+	        UIPATH_ORCH_TENANT_NAME = "Jloaizap"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
 	    }
 	
@@ -66,8 +66,8 @@ pipeline {
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
 					traceLevel: 'None',
-					entryPointPaths: 'Main.xaml'
-	
+					entryPointPaths: 'Main.xaml',
+					createProcess: 'true'
 
 	        )
 	            }
